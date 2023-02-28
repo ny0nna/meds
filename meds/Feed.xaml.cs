@@ -10,15 +10,12 @@ using Xamarin.Forms.Xaml;
 namespace meds
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class HomePage : ContentPage
+    public partial class Feed : ContentPage
     {
-        public HomePage()
+        public Feed()
         {
             InitializeComponent();
-        }
-        private void ImageButton_Clicked(object sender, EventArgs e)
-        {
-            MessagingCenter.Send<App, string>(App.Current as App, "OneMessage", "");
+
         }
     }
 }

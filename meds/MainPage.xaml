@@ -1,28 +1,32 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="meds.MainPage" IsPresented="{Binding isPresent,Mode=TwoWay}">
-
-    <MasterDetailPage.Master >
-        <ContentPage Padding="10" BackgroundColor="LightGray" Title="Master">
-            <ContentPage.Content>
-                <StackLayout Margin="5,30,5,5">
-                    <Label Text="Master page Menu"></Label>
-                    <Button Text="Add Page" BackgroundColor="Gray" Clicked="Button_Clicked"></Button>
-                    <!--Button Text="List Employee" BackgroundColor="Gray" Clicked="Button_Clicked2"></Button>
-                    <Button Text="About Us" BackgroundColor="Gray" Clicked="Button_Clicked3"></Button>
-                    <Button Text="Contact" BackgroundColor="Gray" Clicked="Button_Clickded4"></Button-->
-                </StackLayout>
-            </ContentPage.Content>
+             x:Class="meds.MainPage">
+    <MasterDetailPage.Master>
+        <ContentPage
+            BackgroundColor="#547569"
+            Title="☰"
+            
+            Padding="0,60,0,0">
+            <ListView HasUnevenRows="False" x:Name="ListMenu" BackgroundColor="#86b0a0" RowHeight="100" SeparatorColor="Gray" SelectionMode="None">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <TextCell  TextColor="White" 
+                                   DetailColor="LightGray" 
+                                   Text="{Binding MenuTitle}"
+                                   Detail="{Binding MenuDetail}"
+                                   >
+                        </TextCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
         </ContentPage>
     </MasterDetailPage.Master>
     <MasterDetailPage.Detail>
-        <ContentPage Padding="10">
-            <ContentPage.Content>
-                <StackLayout Margin="5,30,5,5">
-                    <Label Text="Detail Page"></Label>
-                </StackLayout>
-            </ContentPage.Content>
-        </ContentPage>
+        <NavigationPage BackgroundColor="#9bc4b5">
+            <x:Arguments>
+                <ContentPage BackgroundColor="#b2d4c7"></ContentPage>
+            </x:Arguments>
+        </NavigationPage>
     </MasterDetailPage.Detail>
 </MasterDetailPage>

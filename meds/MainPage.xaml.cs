@@ -10,66 +10,38 @@ namespace meds
 {
     public partial class MainPage : MasterDetailPage
     {
-
-        bool _isPresent = false;
-        public bool isPresent
-        {
-            get
-            {
-                return _isPresent;
-            }
-
-            set
-            {
-                if (_isPresent != value)
-                {
-                    _isPresent = value;
-                    OnPropertyChanged("isPresent");
-
-                }
-            }
-
-        }
-
         public MainPage()
         {
             InitializeComponent();
-            BindingContext = this;
-            Detail = new NavigationPage(new HomePage());
-            IsPresented = false;
 
-
-            MessagingCenter.Subscribe<App, string>(App.Current, "OneMessage", (snd, arg) =>
+            Detail = new NavigationPage(new Feed());
+            List<Menu> menu = new List<Menu>
             {
-                isPresent = true;
-            });
-        }
-        private void Button_Clicked(object sender, EventArgs e)
-        {
-            Detail = new NavigationPage(new Page1());
-            IsPresented = false;
-        }
-        /*private void Button_Clicked2(object sender, EventArgs e)
-        {
-            Detail = new NavigationPage(new ListEmployee());
-            IsPresented = false;
+                new Menu { Page = new Feed(), MenuTitle="Расчет приема 1 упаковки лекарства", MenuDetail="На какое количество дней хватит упаковки лекарства с учетом дозировки" },
+                new Menu { Page = new Feed(), MenuTitle="Расчет сроков измения дозировки", MenuDetail="Расчет количества упаковок на период изменеия дозировки" },
+
+            };
+            ListMenu.ItemsSource = menu;
         }
 
-        private void Button_Clicked3(object sender, EventArgs e)
+        private void ListMenu_ItemSelected(object sender, SelectedItemChangedEventArgs e)
         {
-            Detail = new NavigationPage(new AboutUs());
-            IsPresented = false;
+            var menu = e.SelectedItem as Menu;
+            if (menu != null)
+            {
+                IsPresented = false;
+                Detail = new NavigationPage(menu.Page);
+            }
         }
-        private void Button_Clickded4(object sender, EventArgs e)
+        public class Menu
         {
-            Detail = new NavigationPage(new ContactUs());
-            IsPresented = false;
-        }*/
-
-        private void MasterDetailPage_IsPresentedChanged(object sender, EventArgs e)
-        {
-
+            public string MenuTitle { get; set; }
+            public string MenuDetail { get; set; }
+            public Page Page { get; set; }
         }
-
+        void OnTappedContent(object sender, System.EventArgs e)
+        {
+            Navigation.PushAsync(new Page1());
+        }
     }
 }
