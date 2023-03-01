@@ -10,12 +10,11 @@ using Xamarin.Forms.Xaml;
 namespace meds
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class Feed : ContentPage
+    public partial class Page2 : ContentPage
     {
-        public Feed()
+        public Page2()
         {
             InitializeComponent();
-
         }
     }
 }
