@@ -3,24 +3,44 @@
        xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
        xmlns:pages="clr-namespace:meds"
        x:Class="meds.AppShell"
-       FlyoutBackgroundColor="#b2c4d7"
+       FlyoutBackgroundColor="#b2c4d7" 
        >
-
+    
+    <!-- 
+        Шапка меню навигации
+    -->
     <Shell.FlyoutHeader>
         <StackLayout BackgroundColor="#93a0ad" Padding="20" Orientation="Horizontal">
             <Image HeightRequest="50" Source="icon.ico"/>
             <Label Text="MEDS" FontSize="35" VerticalOptions="Center"/>
         </StackLayout>
     </Shell.FlyoutHeader>
-    <FlyoutItem Title="Главная" Icon="xamarin.png">
+    
+    <!-- 
+        Страницы в меню навигации
+    -->
+    <FlyoutItem Title="Главная">
+        <FlyoutItem.Icon>
+            <FileImageSource File="mainpage.png"/>
+        </FlyoutItem.Icon> 
         <ShellContent ContentTemplate="{DataTemplate pages:MainPage}"/>
     </FlyoutItem>
-    <FlyoutItem Title="Page1" Icon="xamarin.png">
+    <FlyoutItem Title="Расчет срока употребления лекарства с учетом дозировки">
+        <FlyoutItem.Icon>
+            <FileImageSource File="pills.png"/>
+        </FlyoutItem.Icon>
         <ShellContent ContentTemplate="{DataTemplate pages:Page1}"/>
     </FlyoutItem>
-        <FlyoutItem Title="Page2" Icon="xamarin.png">
-            <ShellContent ContentTemplate="{DataTemplate pages:Page2}"/>
-        </FlyoutItem>
-    <MenuItem Clicked="MenuItem_Clicked" Text="Help"/>
+        <FlyoutItem Title="Изменеие дозировки">
+            <FlyoutItem.Icon>
+                <FileImageSource File="dosage.png"/>
+            </FlyoutItem.Icon>
+        <ShellContent ContentTemplate="{DataTemplate pages:Page2}"/>
+    </FlyoutItem>
+    
+    <!--
+        Всплывающее диалоговое окно с контактной информацией
+    -->
+    <MenuItem Clicked="MenuItem_Clicked" Text="Помощь" IconImageSource="help.png"/>
 
 </Shell>

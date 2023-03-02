@@ -2,13 +2,32 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="meds.MainPage"
-             NavigationPage.HasNavigationBar="True"
-             Title="Главная">
-    <ContentPage.Content>
+             Title="Главная"
+             BackgroundColor="#afc8ed">
+<Grid>
+        <Grid.Background>
+            <!-- StartPoint defaults to (0,0) -->
+            <LinearGradientBrush EndPoint="0,1">
+                <GradientStop Color="#2194f3"
+                          Offset="0.01" />
+                <GradientStop Color="#7ab7cf"
+                          Offset="0.2" />
+                <GradientStop Color="#9dbac4"
+                          Offset="1.0" />
+            </LinearGradientBrush>
+
+        </Grid.Background>
         <StackLayout>
+            <BoxView Color="White"
+             CornerRadius="10"
+             WidthRequest="160"
+             HeightRequest="160"
+             VerticalOptions="Center"
+             HorizontalOptions="Center" />
+
             <Label Text="dfghjjhk"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
         </StackLayout>
-    </ContentPage.Content>
+    </Grid>
 </ContentPage>
