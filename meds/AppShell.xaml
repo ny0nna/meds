@@ -25,7 +25,7 @@
         </FlyoutItem.Icon> 
         <ShellContent ContentTemplate="{DataTemplate pages:MainPage}"/>
     </FlyoutItem>
-    <FlyoutItem Title="Расчет срока употребления лекарства с учетом дозировки">
+    <FlyoutItem Title="Расчет количества упаковок лекарства на курс приема">
         <FlyoutItem.Icon>
             <FileImageSource File="pills.png"/>
         </FlyoutItem.Icon>

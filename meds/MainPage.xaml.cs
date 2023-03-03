@@ -15,6 +15,5 @@ namespace meds
         {
             InitializeComponent();
         }
-        
     }
 }
