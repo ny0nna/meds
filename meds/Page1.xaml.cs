@@ -10,11 +10,19 @@ using Xamarin.Forms.Xaml;
 namespace meds
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class Page1 : ContentPage
+    public partial class Page1 : TabbedPage
     {
         public Page1()
         {
             InitializeComponent();
+
+        }
+
+
+        public void BtnGo_Clicked(object sender, EventArgs e)
+        {
+            
+
         }
     }
 }

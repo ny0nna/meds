@@ -35,7 +35,7 @@
             <FlyoutItem.Icon>
                 <FileImageSource File="dosage.png"/>
             </FlyoutItem.Icon>
-        <ShellContent ContentTemplate="{DataTemplate pages:Page2}"/>
+        <ShellContent ContentTemplate="{DataTemplate pages:Page3}"/>
     </FlyoutItem>
     
     <!--
