@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<manifest 
+	xmlns:android="http://schemas.android.com/apk/res/android" 
+	android:versionCode="1" 
+	android:versionName="1.0" 
+	package="com.companyname.meds" 
+	android:installLocation="auto">
+	
+	<uses-sdk 
+		android:minSdkVersion="21" 
+		android:targetSdkVersion="29" />
+	<application 
+		android:allowBackup="true" 
+		android:label="meds.Android" 
+		android:theme="@style/MainTheme" 
+		android:icon="@mipmap/icon" 
+		android:usesCleartextTraffic="true" >
+	
+		<activity
+			android:name=".MainActivity"
+			android:exported="true">
+		</activity>
+		
+	</application>
+	<uses-permission android:name="android.permission.INTERNET" />
+	
+</manifest>

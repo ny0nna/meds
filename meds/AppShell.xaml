@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Shell xmlns="http://xamarin.com/schemas/2014/forms"
+       xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+       xmlns:pages="clr-namespace:meds.Pages"
+       x:Class="meds.AppShell"
+       FlyoutBackgroundColor="#b2c4d7" 
+       >
+    
+    <!-- 
+        Шапка меню навигации
+    -->
+    <Shell.FlyoutHeader>
+        <StackLayout BackgroundColor="#93a0ad" Padding="20" Orientation="Horizontal">
+            <Image HeightRequest="50" Source="icon.ico"/>
+            <Label Text="MEDS" FontSize="35" VerticalOptions="Center"/>
+        </StackLayout>
+    </Shell.FlyoutHeader>
+    
+    <!-- 
+        Страницы в меню навигации
+    -->
+    <FlyoutItem Title="Главная">
+        <FlyoutItem.Icon>
+            <FileImageSource File="mainpage.png"/>
+        </FlyoutItem.Icon> 
+        <ShellContent ContentTemplate="{DataTemplate pages:MainPage}"/>
+    </FlyoutItem>
+    
+    <FlyoutItem Title="Расчет количества упаковок лекарства на курс приема">
+        <FlyoutItem.Icon>
+            <FileImageSource File="pills.png"/>
+        </FlyoutItem.Icon>
+        <ShellContent ContentTemplate="{DataTemplate pages:MedsAmount}"/>
+    </FlyoutItem>
+    
+    <FlyoutItem Title="Изменение дозировки">
+            <FlyoutItem.Icon>
+                <FileImageSource File="dosage.png"/>
+            </FlyoutItem.Icon>
+        <ShellContent ContentTemplate="{DataTemplate pages:MedsDosage}"/>
+    </FlyoutItem>
+
+    <FlyoutItem Title="Уведомления">
+        <FlyoutItem.Icon>
+            <FileImageSource File="alarm.png"/>
+        </FlyoutItem.Icon>
+        <ShellContent ContentTemplate="{DataTemplate pages:Notification}"/>
+    </FlyoutItem>
+
+    <!--
+        Всплывающее диалоговое окно с контактной информацией
+    -->
+    <MenuItem Clicked="MenuItem_Clicked" Text="Помощь" IconImageSource="help.png"/>
+
+</Shell>
