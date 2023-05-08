@@ -5,36 +5,56 @@
             Title="Изменение дозировки">
     
     <ContentPage Title="Увеличение дозировки">
-
+        <ScrollView>
         <StackLayout BackgroundColor="GhostWhite">
             <StackLayout Orientation="Horizontal" Padding="10,10,10,0">
-                <Label Text="Начальная дозировка:" LineBreakMode="CharacterWrap" FontSize="16"  VerticalOptions="CenterAndExpand"/>
+                <Label Text="Начальная дозировка:" LineBreakMode="CharacterWrap" FontSize="16"  VerticalOptions="CenterAndExpand" TextColor="Black"/>
                 <Entry x:Name="start1" HorizontalOptions="FillAndExpand" Keyboard="Numeric" WidthRequest="50" ClearButtonVisibility="WhileEditing"/>
-                <Label Text="мг." FontSize="16" VerticalOptions="CenterAndExpand"/>
+                <Label Text="мг." FontSize="16" VerticalOptions="CenterAndExpand" TextColor="Black"/>
             </StackLayout>
 
             <StackLayout Orientation="Horizontal" Padding="10,10,10,0">
-                <Label Text="Конечная дозировка:" LineBreakMode="CharacterWrap" FontSize="16"  VerticalOptions="CenterAndExpand"/>
+                <Label Text="Конечная дозировка:" LineBreakMode="CharacterWrap" FontSize="16"  VerticalOptions="CenterAndExpand" TextColor="Black"/>
                 <Entry x:Name="end1" HorizontalOptions="FillAndExpand" Keyboard="Numeric" WidthRequest="50" ClearButtonVisibility="WhileEditing"/>
-                <Label Text="мг." FontSize="16" VerticalOptions="CenterAndExpand"/>
+                <Label Text="мг." FontSize="16" VerticalOptions="CenterAndExpand" TextColor="Black"/>
             </StackLayout>
 
             <BoxView HeightRequest="1" Color="DarkGray" Margin="0,10,0,10"/>
 
             <StackLayout Orientation="Horizontal" Padding="10,10,10,0">
-                <Label Text="Изменение дозировки каждые" LineBreakMode="CharacterWrap" FontSize="16"  VerticalOptions="CenterAndExpand"/>
+                <Label Text="Изменение дозировки каждые" LineBreakMode="CharacterWrap" FontSize="16"  VerticalOptions="CenterAndExpand" TextColor="Black"/>
                 <Entry x:Name="dn1" HorizontalOptions="FillAndExpand" Keyboard="Numeric" WidthRequest="50" ClearButtonVisibility="WhileEditing"/>
-                <Label Text="дн." FontSize="16" VerticalOptions="CenterAndExpand"/>
+                <Label Text="дн." FontSize="16" VerticalOptions="CenterAndExpand" TextColor="Black"/>
             </StackLayout>
             
             <StackLayout Orientation="Horizontal" Padding="10,10,10,0">
-                <Label Text="Изменение дозировки по:" LineBreakMode="CharacterWrap" FontSize="16"  VerticalOptions="CenterAndExpand"/>
+                <Label Text="Изменение дозировки по:" LineBreakMode="CharacterWrap" FontSize="16"  VerticalOptions="CenterAndExpand" TextColor="Black"/>
                 <Entry x:Name="doz1" HorizontalOptions="FillAndExpand" Keyboard="Numeric" WidthRequest="50" ClearButtonVisibility="WhileEditing"/>
-                <Label Text="мг." FontSize="16" VerticalOptions="CenterAndExpand"/>
+                <Label Text="мг." FontSize="16" VerticalOptions="CenterAndExpand" TextColor="Black"/>
             </StackLayout>
 
             <BoxView HeightRequest="1" Color="DarkGray" Margin="0,10,0,10"/>
+
+            <StackLayout Orientation="Horizontal" Padding="10,10,10,0">
+                <Label Text="Количество таблеток в упаковке:" LineBreakMode="CharacterWrap" FontSize="16"  VerticalOptions="CenterAndExpand" TextColor="Black"/>
+                <Entry x:Name="amount1" HorizontalOptions="FillAndExpand" Keyboard="Numeric" WidthRequest="50" ClearButtonVisibility="WhileEditing"/>
+                <Label Text="шт." FontSize="16" VerticalOptions="CenterAndExpand" TextColor="Black"/>
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal" Padding="10,10,10,0">
+                <Label Text="Дозировка:" LineBreakMode="CharacterWrap" FontSize="16"  VerticalOptions="CenterAndExpand" TextColor="Black"/>
+                <Entry x:Name="mg1" HorizontalOptions="FillAndExpand" Keyboard="Numeric" WidthRequest="50" ClearButtonVisibility="WhileEditing"/>
+                <Label Text="мг." FontSize="16" VerticalOptions="CenterAndExpand" TextColor="Black"/>
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal" Padding="10,10,10,0">
+                <Label Text="Количество таблекток в день" LineBreakMode="CharacterWrap" FontSize="16" VerticalOptions="CenterAndExpand" TextColor="Black"/>
+                <Entry x:Name="count1" HorizontalOptions="FillAndExpand" Keyboard="Numeric" ClearButtonVisibility="WhileEditing"/>
+                <Label Text="шт." FontSize="16" VerticalOptions="CenterAndExpand" TextColor="Black"/>
+            </StackLayout>
             
+            <BoxView HeightRequest="1" Color="DarkGray" Margin="0,10,0,10"/>
+
             <StackLayout Padding="10,10,10,0">
                 <Button Text="GO!" x:Name="BtnGoResult1" Clicked="BtnGoResult1_Clicked"/>
             </StackLayout>
@@ -50,38 +70,59 @@
             </Frame>
             
         </StackLayout>
+    </ScrollView>
     </ContentPage>
     
     <ContentPage Title="Уменьшение дозировки">
+        <ScrollView>
         <StackLayout BackgroundColor="GhostWhite">
             <StackLayout Orientation="Horizontal" Padding="10,10,10,0">
-                <Label Text="Начальная дозировка:" LineBreakMode="CharacterWrap" FontSize="16"  VerticalOptions="CenterAndExpand"/>
+                <Label Text="Начальная дозировка:" LineBreakMode="CharacterWrap" FontSize="16"  VerticalOptions="CenterAndExpand" TextColor="Black"/>
                 <Entry x:Name="start2" HorizontalOptions="FillAndExpand" Keyboard="Numeric" WidthRequest="50" ClearButtonVisibility="WhileEditing"/>
-                <Label Text="мг." FontSize="16" VerticalOptions="CenterAndExpand"/>
+                <Label Text="мг." FontSize="16" VerticalOptions="CenterAndExpand" TextColor="Black"/>
             </StackLayout>
 
             <StackLayout Orientation="Horizontal" Padding="10,10,10,0">
-                <Label Text="Конечная дозировка:" LineBreakMode="CharacterWrap" FontSize="16"  VerticalOptions="CenterAndExpand"/>
+                <Label Text="Конечная дозировка:" LineBreakMode="CharacterWrap" FontSize="16"  VerticalOptions="CenterAndExpand" TextColor="Black"/>
                 <Entry x:Name="end2" HorizontalOptions="FillAndExpand" Keyboard="Numeric" WidthRequest="50" ClearButtonVisibility="WhileEditing"/>
-                <Label Text="мг." FontSize="16" VerticalOptions="CenterAndExpand"/>
+                <Label Text="мг." FontSize="16" VerticalOptions="CenterAndExpand" TextColor="Black"/>
             </StackLayout>
 
             <BoxView HeightRequest="1" Color="DarkGray" Margin="0,10,0,10"/>
 
             <StackLayout Orientation="Horizontal" Padding="10,10,10,0">
-                <Label Text="Изменение дозировки каждые" LineBreakMode="CharacterWrap" FontSize="16"  VerticalOptions="CenterAndExpand"/>
+                <Label Text="Изменение дозировки каждые" LineBreakMode="CharacterWrap" FontSize="16"  VerticalOptions="CenterAndExpand" TextColor="Black"/>
                 <Entry x:Name="dn2" HorizontalOptions="FillAndExpand" Keyboard="Numeric" WidthRequest="50" ClearButtonVisibility="WhileEditing"/>
-                <Label Text="дн." FontSize="16" VerticalOptions="CenterAndExpand"/>
+                <Label Text="дн." FontSize="16" VerticalOptions="CenterAndExpand" TextColor="Black"/>
             </StackLayout>
 
             <StackLayout Orientation="Horizontal" Padding="10,10,10,0">
-                <Label Text="Изменение дозировки по:" LineBreakMode="CharacterWrap" FontSize="16"  VerticalOptions="CenterAndExpand"/>
+                <Label Text="Изменение дозировки по:" LineBreakMode="CharacterWrap" FontSize="16"  VerticalOptions="CenterAndExpand" TextColor="Black"/>
                 <Entry x:Name="doz2" HorizontalOptions="FillAndExpand" Keyboard="Numeric" WidthRequest="50" ClearButtonVisibility="WhileEditing"/>
-                <Label Text="мг." FontSize="16" VerticalOptions="CenterAndExpand"/>
+                <Label Text="мг." FontSize="16" VerticalOptions="CenterAndExpand" TextColor="Black"/>
             </StackLayout>
 
             <BoxView HeightRequest="1" Color="DarkGray" Margin="0,10,0,10"/>
 
+            <StackLayout Orientation="Horizontal" Padding="10,10,10,0">
+                <Label Text="Количество таблеток в упаковке:" LineBreakMode="CharacterWrap" FontSize="16"  VerticalOptions="CenterAndExpand" TextColor="Black"/>
+                <Entry x:Name="amount2" HorizontalOptions="FillAndExpand" Keyboard="Numeric" WidthRequest="50" ClearButtonVisibility="WhileEditing"/>
+                <Label Text="шт." FontSize="16" VerticalOptions="CenterAndExpand" TextColor="Black"/>
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal" Padding="10,10,10,0">
+                <Label Text="Дозировка:" LineBreakMode="CharacterWrap" FontSize="16"  VerticalOptions="CenterAndExpand" TextColor="Black"/>
+                <Entry x:Name="mg2" HorizontalOptions="FillAndExpand" Keyboard="Numeric" WidthRequest="50" ClearButtonVisibility="WhileEditing"/>
+                <Label Text="мг." FontSize="16" VerticalOptions="CenterAndExpand" TextColor="Black"/>
+            </StackLayout>
+            
+            <StackLayout Orientation="Horizontal" Padding="10,10,10,0">
+                <Label Text="Количество таблекток в день" LineBreakMode="CharacterWrap" FontSize="16" VerticalOptions="CenterAndExpand" TextColor="Black"/>
+                <Entry x:Name="count2" HorizontalOptions="FillAndExpand" Keyboard="Numeric" ClearButtonVisibility="WhileEditing"/>
+                <Label Text="шт." FontSize="16" VerticalOptions="CenterAndExpand" TextColor="Black"/>
+            </StackLayout>
+            <BoxView HeightRequest="1" Color="DarkGray" Margin="0,10,0,10"/>
+            
             <StackLayout Padding="10,10,10,0">
                 <Button Text="GO!" x:Name="BtnGoResult2" Clicked="BtnGoResult2_Clicked"/>
             </StackLayout>
@@ -97,6 +138,7 @@
             </Frame>
 
         </StackLayout>
+    </ScrollView>
     </ContentPage>
     
 </TabbedPage>

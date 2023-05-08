@@ -11,10 +11,11 @@
         <ScrollView>
             <StackLayout BackgroundColor="GhostWhite">
                     <StackLayout Orientation="Horizontal" Padding="50,10,50,0">
-                        <Label Text="Дата начала приема: " FontSize="16" VerticalOptions="CenterAndExpand"/>
+                    <Label Text="Дата начала приема: " FontSize="16" VerticalOptions="CenterAndExpand" TextColor="Black"/>
                 
                         <!-- Начало приема лекарства -->
                         <DatePicker x:Name="startMed"  
+                                    TextColor="Black"
                                     HorizontalOptions="EndAndExpand" 
                                     FontSize="18" 
                                     Format="dd/MM/yyyy"
@@ -23,8 +24,9 @@
             
                     <!-- Конец приема лекарства -->
                     <StackLayout Orientation="Horizontal"  Padding="50,10,50,0">
-                        <Label Text="Дата конца приема: " FontSize="16" VerticalOptions="CenterAndExpand"/>
+                    <Label Text="Дата конца приема: " FontSize="16" VerticalOptions="CenterAndExpand" TextColor="Black"/>
                         <DatePicker x:Name="endMed" 
+                                    TextColor="Black"
                                     HorizontalOptions="EndAndExpand" 
                                     FontSize="18" 
                                     Format="dd/MM/yyyy"
@@ -36,19 +38,18 @@
             
                     <!-- Количество таблеток в упаковке -->
                     <StackLayout Orientation="Horizontal" Padding="10,10,10,0">
-                        <Label Text="Количество таблеток в упаковке:" LineBreakMode="CharacterWrap" FontSize="16"  VerticalOptions="CenterAndExpand"/>
+                    <Label Text="Количество таблеток в упаковке:" LineBreakMode="CharacterWrap" FontSize="16"  VerticalOptions="CenterAndExpand" TextColor="Black"/>
                     <Entry x:Name="amount" HorizontalOptions="FillAndExpand" Keyboard="Numeric" WidthRequest="50" ClearButtonVisibility="WhileEditing"/>
-                        <Label Text="шт." FontSize="16" VerticalOptions="CenterAndExpand"/>
+                    <Label Text="шт." FontSize="16" VerticalOptions="CenterAndExpand" TextColor="Black"/>
                     </StackLayout>
             
                     <BoxView HeightRequest="1" Color="DarkGray" Margin="0,10,0,10"/>
             
                     <!-- Количество таблеток в день -->
                     <StackLayout Orientation="Horizontal" Padding="10,10,10,0">
-                        <Label Text="Количество таблекток в день" FontSize="16" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"/>
-
+                    <Label Text="Количество таблекток в день" FontSize="16" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" TextColor="Black"/>
                     <Entry x:Name="pills" HorizontalOptions="FillAndExpand" Keyboard="Numeric" ClearButtonVisibility="WhileEditing"/>
-                        <Label Text="шт." FontSize="16" VerticalOptions="CenterAndExpand"/>                
+                    <Label Text="шт." FontSize="16" VerticalOptions="CenterAndExpand" TextColor="Black"/>                
                     </StackLayout>
            
                     <BoxView HeightRequest="1" Color="DarkGray" Margin="0,10,0,10"/>
@@ -80,18 +81,18 @@
 
                 <!-- Количество таблеток в упаковке -->
                 <StackLayout Orientation="Horizontal" Padding="10,10,10,0">
-                    <Label Text="Количество препарата в упаковке:" LineBreakMode="CharacterWrap" FontSize="16"  VerticalOptions="CenterAndExpand"/>
+                    <Label Text="Количество препарата в упаковке:" LineBreakMode="CharacterWrap" FontSize="16"  VerticalOptions="CenterAndExpand" TextColor="Black"/>
                     <Entry x:Name="amountPill" HorizontalOptions="FillAndExpand" Keyboard="Numeric" WidthRequest="50" ClearButtonVisibility="WhileEditing"/>
-                    <Label Text="шт." FontSize="16" VerticalOptions="CenterAndExpand"/>
+                    <Label Text="шт." FontSize="16" VerticalOptions="CenterAndExpand" TextColor="Black"/>
                 </StackLayout>
 
                 <BoxView HeightRequest="1" Color="DarkGray" Margin="0,10,0,10"/>
 
                 <!-- Количество таблеток в день -->
                 <StackLayout Orientation="Horizontal" Padding="10,10,10,0">
-                    <Label Text="Количество препарата в день" FontSize="16" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"/>
+                    <Label Text="Количество препарата в день" FontSize="16" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" TextColor="Black"/>
                     <Entry x:Name="pillsDay" HorizontalOptions="FillAndExpand" Keyboard="Numeric" ClearButtonVisibility="WhileEditing"/>
-                    <Label Text="шт." FontSize="16" VerticalOptions="CenterAndExpand"/>
+                    <Label Text="шт." FontSize="16" VerticalOptions="CenterAndExpand" TextColor="Black"/>
                 </StackLayout>
 
                 <BoxView HeightRequest="1" Color="DarkGray" Margin="0,10,0,10"/>

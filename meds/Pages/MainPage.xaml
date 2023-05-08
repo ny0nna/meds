@@ -3,20 +3,20 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="meds.Pages.MainPage"
              Title="Главная">
-    <ScrollView>
+    <ScrollView >
         <StackLayout>
             <!-- 
                 первый boxview: приветствие
             -->
             <Frame BorderColor="Gray" BackgroundColor="#dfe1e8" CornerRadius="10" HorizontalOptions="Fill" Margin="5,5,5,0">
                 <StackLayout>
-                    <Label FontSize="Title" HorizontalOptions="Center"   
+                    <Label FontSize="Title" TextColor="Black" HorizontalOptions="Center"
                            Text="Добро пожаловать!" />
                     
                     <BoxView Color="Gray"  HeightRequest="2" HorizontalOptions="Fill" />
                     <BoxView Color="Gray"  HeightRequest="2" HorizontalOptions="Fill" />
-                    
-                    <Label FontSize="Large" HorizontalOptions="Center"  Padding="0,0,0,10"
+
+                    <Label FontSize="Large" TextColor="Black" HorizontalOptions="Center"  Padding="0,0,0,10"
                            Text="Руководство по MEDS Tracker"/>
                     <Label FontSize="Medium" TextColor="DarkRed" HorizontalOptions="Center" Padding="0,0,0,10"
                            Text="Все расчеты производятся с учетом дозировки!"/>
@@ -28,13 +28,13 @@
             -->
             <Frame BorderColor="Gray" BackgroundColor="#e1e4eb" CornerRadius="15" Margin="10,10,10,0">
             <StackLayout>
-                    
-                    <Label FontSize="Title" FontAttributes="Bold" HorizontalOptions="CenterAndExpand" 
+
+                    <Label FontSize="Title" TextColor="Black" FontAttributes="Bold" HorizontalOptions="CenterAndExpand" 
                            Text="Страница расчета лекарства на курс лечения" />
                 
                     <BoxView Color="DarkGray"  HeightRequest="2" HorizontalOptions="Fill" />
-                
-                    <Label FontSize="Large" HorizontalOptions="CenterAndExpand" Padding="0,5,0,5" 
+
+                    <Label FontSize="Large" TextColor="Black" HorizontalOptions="CenterAndExpand" Padding="0,5,0,5" 
                             Text="Функционал"/>
                 
                     <BoxView Color="DarkGray"  HeightRequest="1" HorizontalOptions="Fill" Margin="10"/>
@@ -42,17 +42,17 @@
                     <!-- 
                         Описание первой функции
                     -->
-                    <Label Margin="0,0,0,10" FontAttributes="Bold" 
+                    <Label Margin="0,0,0,10" FontAttributes="Bold" TextColor="Black"
                            Text="• Расчет количества упаковок лекарства на курс лечения." 
                            FontSize="Medium" HorizontalOptions="Fill"  />
-                
-                    <Label FontSize="Medium" HorizontalOptions="FillAndExpand" 
+
+                    <Label FontSize="Medium" HorizontalOptions="FillAndExpand" TextColor="Black"
                            Text="Вы выбираете даты начала и окончания приема лекарства."/>
-                    <Label FontSize="Medium" HorizontalOptions="FillAndExpand"
+                    <Label FontSize="Medium" HorizontalOptions="FillAndExpand" TextColor="Black"
                            Text="Затем необходимо указать количество таблеток в упаковке."/>
-                    <Label FontSize="Medium" HorizontalOptions="FillAndExpand"
+                    <Label FontSize="Medium" HorizontalOptions="FillAndExpand" TextColor="Black"
                            Text="Теперь нужно указать количество приемов таблеток в день."/>
-                    <Label FontSize="Medium" HorizontalOptions="FillAndExpand"
+                    <Label FontSize="Medium" HorizontalOptions="FillAndExpand" TextColor="Black"
                            Text="После ввода всех необходимых данных нужно нажать на кнопку, после чего вы получите результат."/>
                    
                 
@@ -61,14 +61,14 @@
                     <!-- 
                         Описание 2 функции
                     -->
-                    <Label FontAttributes="Bold" FontSize="Medium" HorizontalOptions="Fill"  
+                    <Label FontAttributes="Bold" FontSize="Medium" HorizontalOptions="Fill" TextColor="Black" 
                            Text="• Расчет периода, на который хватит 1 упаковки лекарства." />
-                
-                    <Label FontSize="Medium" HorizontalOptions="FillAndExpand" 
+
+                    <Label FontSize="Medium" HorizontalOptions="FillAndExpand" TextColor="Black"
                            Text="Сначала нужно вписать количество препарата в упаковке."/>
-                    <Label FontSize="Medium" HorizontalOptions="FillAndExpand"
+                    <Label FontSize="Medium" HorizontalOptions="FillAndExpand" TextColor="Black"
                            Text="Затем необходимо указать количество приемов в день."/>
-                    <Label FontSize="Medium" HorizontalOptions="FillAndExpand"
+                    <Label FontSize="Medium" HorizontalOptions="FillAndExpand" TextColor="Black"
                            Text="После ввода всех необходимых данных нужно нажать на кнопку, после чего вы получите результат."/>
 
 
@@ -81,12 +81,12 @@
             <Frame BorderColor="Gray" BackgroundColor="#e1e4eb" CornerRadius="15" Margin="10,10,10,0">
                 <StackLayout>
 
-                    <Label FontSize="Title" FontAttributes="Bold" HorizontalOptions="CenterAndExpand" 
+                    <Label FontSize="Title" FontAttributes="Bold" HorizontalOptions="CenterAndExpand" TextColor="Black"
                            Text="Страница расчета изменения дозировки" />
 
                     <BoxView Color="DarkGray"  HeightRequest="2" HorizontalOptions="Fill" />
 
-                    <Label FontSize="Large" HorizontalOptions="CenterAndExpand" Padding="0,5,0,5" 
+                    <Label FontSize="Large" HorizontalOptions="CenterAndExpand" Padding="0,5,0,5" TextColor="Black"
                             Text="Функционал"/>
 
                     <BoxView Color="DarkGray"  HeightRequest="1" HorizontalOptions="Fill" Margin="10"/>
@@ -94,25 +94,25 @@
                     <!-- 
                         Повышение дозировки
                     -->
-                    <Label Margin="0,0,0,10" FontAttributes="Bold" 
+                    <Label Margin="0,0,0,10" FontAttributes="Bold" TextColor="Black"
                            Text="• Повышение дозировки." 
                            FontSize="Medium" HorizontalOptions="Fill"  />
-                    
-                    <Label FontSize="Medium" HorizontalOptions="FillAndExpand"
+
+                    <Label FontSize="Medium" HorizontalOptions="FillAndExpand" TextColor="Black"
                            Text="Сначала надо вписать значения начальной и конечной дозировок."/>
-                    
-                    <Label FontSize="Medium" HorizontalOptions="FillAndExpand" 
+
+                    <Label FontSize="Medium" HorizontalOptions="FillAndExpand" TextColor="Black"
                            Text="Затем нужно вписать, через какое количество дней меняется дозировка и на сколько."/>
-                    
-                    <Label FontSize="Small" HorizontalOptions="FillAndExpand" 
+
+                    <Label FontSize="Small" HorizontalOptions="FillAndExpand" TextColor="Black"
                            Text="Пример: При повышении дозировка увеличивается каздые 3 дня на 50 мг."/>
-                    
-                    <Label FontSize="Medium" HorizontalOptions="FillAndExpand"
+
+                    <Label FontSize="Medium" HorizontalOptions="FillAndExpand" TextColor="Black"
                            Text="Потом необходимо указать количество приемов в день."/>
 
                     <!--Label FontSize="Medium" HorizontalOptions="FillAndExpand" Text="Теперь нужно указать  количество препарата в упаковке (это поможет расчитать, сколько упаковок понадобится на период изменения дозировки)."/-->
 
-                    <Label FontSize="Medium" HorizontalOptions="FillAndExpand"
+                    <Label FontSize="Medium" HorizontalOptions="FillAndExpand" TextColor="Black"
                            Text="После ввода всех необходимых данных нужно нажать на кнопку, после чего вы получите результат."/>
 
                     <BoxView Color="DarkGray"  HeightRequest="1" HorizontalOptions="Fill" Margin="10"/>
@@ -120,25 +120,25 @@
                     <!-- 
                         Понижение дозировки
                     -->
-                    <Label Margin="0,0,0,10" FontAttributes="Bold" 
+                    <Label Margin="0,0,0,10" FontAttributes="Bold" TextColor="Black"
                            Text="• Понижение дозировки." 
                            FontSize="Medium" HorizontalOptions="Fill"  />
 
-                    <Label FontSize="Medium" HorizontalOptions="FillAndExpand"
+                    <Label FontSize="Medium" HorizontalOptions="FillAndExpand" TextColor="Black"
                            Text="Сначала надо вписать значения начальной и конечной дозировок."/>
 
-                    <Label FontSize="Medium" HorizontalOptions="FillAndExpand" 
+                    <Label FontSize="Medium" HorizontalOptions="FillAndExpand" TextColor="Black"
                            Text="Затем нужно вписать, через какое количество дней меняется дозировка и на сколько."/>
 
-                    <Label FontSize="Small" HorizontalOptions="FillAndExpand" 
+                    <Label FontSize="Small" HorizontalOptions="FillAndExpand" TextColor="Black"
                            Text="Пример: При понижении дозировка уменьшается каздые 3 дня на 50 мг."/>
 
-                    <Label FontSize="Medium" HorizontalOptions="FillAndExpand"
+                    <Label FontSize="Medium" HorizontalOptions="FillAndExpand" TextColor="Black"
                            Text="Потом необходимо указать количество приемов в день."/>
 
                     <!--Label FontSize="Medium" HorizontalOptions="FillAndExpand" Text="Теперь нужно указать  количество препарата в упаковке (это поможет расчитать, сколько упаковок понадобится на период изменения дозировки)."/-->
 
-                    <Label FontSize="Medium" HorizontalOptions="FillAndExpand"
+                    <Label FontSize="Medium" HorizontalOptions="FillAndExpand" TextColor="Black"
                            Text="После ввода всех необходимых данных нужно нажать на кнопку, после чего вы получите результат."/>
 
                 </StackLayout>
@@ -149,28 +149,28 @@
             -->
             <Frame BorderColor="Gray" BackgroundColor="#e1e4eb" CornerRadius="15" Margin="10,10,10,0">
                 <StackLayout>
-                    <Label Text="Тут будет инструкция по уведомлениям" FontSize="Title" HorizontalOptions="Center"  />
+                    <Label Text="Тут будет инструкция по уведомлениям" FontSize="Title" HorizontalOptions="Center" TextColor="Black" />
                     
                     <BoxView Color="DarkGray"  HeightRequest="2" HorizontalOptions="Fill" />
                     <BoxView Color="LightGray"  HeightRequest="2" HorizontalOptions="Fill" />
-                    
-                    <Label Text="Руководство по MEDS Tracker" FontSize="Large" HorizontalOptions="Center"  Padding="0,0,0,10"/>
-                    <Label Text="Руководство по MEDS Tracker" FontSize="Medium" HorizontalOptions="Fill"  />
+
+                    <Label Text="Руководство по MEDS Tracker" FontSize="Large" HorizontalOptions="Center"  Padding="0,0,0,10" TextColor="Black"/>
+                    <Label Text="Руководство по MEDS Tracker" FontSize="Medium" HorizontalOptions="Fill" TextColor="Black" />
                 </StackLayout>
             </Frame>
 
             <!-- 
                 пятый boxview:
             -->
-            <Frame BorderColor="Gray" BackgroundColor="#e1e4eb" CornerRadius="15" Margin="10,10,10,0">
+            <Frame BorderColor="Gray" BackgroundColor="#e1e4eb" CornerRadius="15" Margin="10,10,10,20">
                 <StackLayout>
-                    <Label Text="тут будет инструкция по истории расчетов, если добавлю эту функцию" FontSize="Title" HorizontalOptions="Center"  />
+                    <Label Text="тут будет инструкция по истории расчетов, если добавлю эту функцию" FontSize="Title" HorizontalOptions="Center" TextColor="Black" />
                     
                     <BoxView Color="DarkGray"  HeightRequest="2" HorizontalOptions="Fill" />
                     <BoxView Color="LightGray"  HeightRequest="2" HorizontalOptions="Fill" />
-                    
-                    <Label Text="Руководство по MEDS Tracker" FontSize="Large" HorizontalOptions="Center"  Padding="0,0,0,10"/>
-                    <Label Text="Руководство по MEDS Tracker" FontSize="Medium" HorizontalOptions="Fill"  />
+
+                    <Label Text="Руководство по MEDS Tracker" FontSize="Large" HorizontalOptions="Center"  Padding="0,0,0,10" TextColor="Black"/>
+                    <Label Text="Руководство по MEDS Tracker" FontSize="Medium" HorizontalOptions="Fill" TextColor="Black" />
                 </StackLayout>
             </Frame>
             
