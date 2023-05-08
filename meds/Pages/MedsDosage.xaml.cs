@@ -46,7 +46,6 @@ namespace meds.Pages
                 double pillsDosage = Double.Parse(pillsMg);
                 double pillsCount = Double.Parse(countP);
 
-
                 double daysCount = Math.Ceiling(days * ((endDosage - startDosage) / dosage));
 
                 double l = 0;
@@ -64,6 +63,8 @@ namespace meds.Pages
                 var packDosage = pillsDosage * pillsAmount;
                 var Totalresult = Math.Ceiling(mg/ packDosage);
                     result1.Text = String.Format("Дозировка займет {0} дн. \nВам понадобится {1} уп. лекарств.", daysCount,Totalresult);
+                
+                
             }
             else DisplayAlert("Предупреждение", "Некоторые поля остались пустыми!", "OK");
 
@@ -96,7 +97,7 @@ namespace meds.Pages
                 double pillsAmount = Double.Parse(pills);
                 double pillsDosage = Double.Parse(pillsMg);
                 double pillsCount = Double.Parse(countP);
-
+               
                 double daysCount = Math.Ceiling(days * ((startDosage - endDosage) / dosage));
                
                 double l = 0;
@@ -114,6 +115,7 @@ namespace meds.Pages
                 var packDosage = pillsDosage * pillsAmount;
                 var Totalresult = Math.Ceiling(mg / packDosage);
                 result2.Text = String.Format("Дозировка займет {0} дн. \nВам понадобится {1} уп. лекарств.", daysCount, Totalresult);
+
             }
             else DisplayAlert("Предупреждение", "Некоторые поля остались пустыми!", "OK");
         }

@@ -39,7 +39,7 @@
                     <!-- Количество таблеток в упаковке -->
                     <StackLayout Orientation="Horizontal" Padding="10,10,10,0">
                     <Label Text="Количество таблеток в упаковке:" LineBreakMode="CharacterWrap" FontSize="16"  VerticalOptions="CenterAndExpand" TextColor="Black"/>
-                    <Entry x:Name="amount" HorizontalOptions="FillAndExpand" Keyboard="Numeric" WidthRequest="50" ClearButtonVisibility="WhileEditing"/>
+                    <Entry x:Name="amount" HorizontalOptions="FillAndExpand" Keyboard="Numeric" WidthRequest="50" ClearButtonVisibility="WhileEditing" TextColor="Black"/>
                     <Label Text="шт." FontSize="16" VerticalOptions="CenterAndExpand" TextColor="Black"/>
                     </StackLayout>
             
@@ -48,7 +48,7 @@
                     <!-- Количество таблеток в день -->
                     <StackLayout Orientation="Horizontal" Padding="10,10,10,0">
                     <Label Text="Количество таблекток в день" FontSize="16" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" TextColor="Black"/>
-                    <Entry x:Name="pills" HorizontalOptions="FillAndExpand" Keyboard="Numeric" ClearButtonVisibility="WhileEditing"/>
+                    <Entry x:Name="pills" HorizontalOptions="FillAndExpand" Keyboard="Numeric" ClearButtonVisibility="WhileEditing" TextColor="Black"/>
                     <Label Text="шт." FontSize="16" VerticalOptions="CenterAndExpand" TextColor="Black"/>                
                     </StackLayout>
            
@@ -82,7 +82,7 @@
                 <!-- Количество таблеток в упаковке -->
                 <StackLayout Orientation="Horizontal" Padding="10,10,10,0">
                     <Label Text="Количество препарата в упаковке:" LineBreakMode="CharacterWrap" FontSize="16"  VerticalOptions="CenterAndExpand" TextColor="Black"/>
-                    <Entry x:Name="amountPill" HorizontalOptions="FillAndExpand" Keyboard="Numeric" WidthRequest="50" ClearButtonVisibility="WhileEditing"/>
+                    <Entry x:Name="amountPill" HorizontalOptions="FillAndExpand" Keyboard="Numeric" WidthRequest="50" ClearButtonVisibility="WhileEditing" TextColor="Black"/>
                     <Label Text="шт." FontSize="16" VerticalOptions="CenterAndExpand" TextColor="Black"/>
                 </StackLayout>
 
@@ -91,7 +91,7 @@
                 <!-- Количество таблеток в день -->
                 <StackLayout Orientation="Horizontal" Padding="10,10,10,0">
                     <Label Text="Количество препарата в день" FontSize="16" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" TextColor="Black"/>
-                    <Entry x:Name="pillsDay" HorizontalOptions="FillAndExpand" Keyboard="Numeric" ClearButtonVisibility="WhileEditing"/>
+                    <Entry x:Name="pillsDay" HorizontalOptions="FillAndExpand" Keyboard="Numeric" ClearButtonVisibility="WhileEditing" TextColor="Black"/>
                     <Label Text="шт." FontSize="16" VerticalOptions="CenterAndExpand" TextColor="Black"/>
                 </StackLayout>
 
