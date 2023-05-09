@@ -7,7 +7,7 @@
     <StackLayout 
         x:Name="stackLayout"
              BackgroundColor="GhostWhite">
-        <Label Text="Click the button below to create a local notification."
+        <Label Text="10."
            TextColor="Red"
            HorizontalOptions="Center"
            VerticalOptions="Start" />
@@ -15,12 +15,19 @@
             HorizontalOptions="Center"
             VerticalOptions="Start"
             Clicked="OnSendClick" />
-        <Label Text="Click the button below to schedule a local notification for in 10 seconds time."
-           TextColor="Red"
+
+        <!--StackLayout Orientation="Horizontal" Padding="10,10,10,0">
+            <Label Text="Интервал повторений " LineBreakMode="CharacterWrap" FontSize="16"  VerticalOptions="CenterAndExpand" TextColor="Black"/>
+            <Entry x:Name="intervalTimer" HorizontalOptions="FillAndExpand" Keyboard="Numeric" WidthRequest="50" ClearButtonVisibility="WhileEditing"  TextColor="Black"/>
+            <Label Text="ч." FontSize="16" VerticalOptions="CenterAndExpand" TextColor="Black"/>
+        </StackLayout-->
+        
+        <Label Text="5." 
+            TextColor="Red" 
            HorizontalOptions="Center"
            VerticalOptions="Start" />
-        <Button Text="Create Notification"
-            HorizontalOptions="Center"
+         <Button Text="Create Notification"
+           HorizontalOptions="Center"
             VerticalOptions="Start"
             Clicked="OnScheduleClick" />
     </StackLayout>

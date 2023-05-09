@@ -70,6 +70,8 @@
     <Compile Include="MainActivity.cs" />
     <Compile Include="Notifications\AlarmHandler.cs" />
     <Compile Include="Notifications\AndroidNotificationManager.cs" />
+    <Compile Include="Notifications\RepeatingAlarmFiveSec.cs" />
+    <Compile Include="Notifications\RepeatingAlarmTenSec.cs" />
     <Compile Include="Resources\Resource.designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

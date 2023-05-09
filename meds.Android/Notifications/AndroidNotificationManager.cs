@@ -43,7 +43,7 @@ namespace meds.Droid
             }
         }
 
-        public void SendNotification(string title, string message, DateTime? notifyTime = null)
+        public void SendNotificationFive(string title, string message, DateTime? notifyTime = null)
         {
             if (!channelInitialized)
             {
@@ -52,14 +52,38 @@ namespace meds.Droid
 
             if (notifyTime != null)
             {
-                Intent intent = new Intent(AndroidApp.Context, typeof(AlarmHandler));
-                intent.PutExtra(TitleKey, title);
-                intent.PutExtra(MessageKey, message);
+                Intent intent = new Intent(AndroidApp.Context, typeof(RepeatingAlarmFiveSec));
+                var source = PendingIntent.GetBroadcast(AndroidApp.Context, 0, intent, PendingIntentFlags.UpdateCurrent);
 
-                PendingIntent pendingIntent = PendingIntent.GetBroadcast(AndroidApp.Context, pendingIntentId++, intent, PendingIntentFlags.CancelCurrent);
-                long triggerTime = GetNotifyTime(notifyTime.Value);
-                AlarmManager alarmManager = AndroidApp.Context.GetSystemService(Context.AlarmService) as AlarmManager;
-                alarmManager.Set(AlarmType.RtcWakeup, triggerTime, pendingIntent);
+                // Schedule the alarm!
+                var am = (AlarmManager)Android.App.Application.Context.GetSystemService(Context.AlarmService);
+
+                //After 15s, use the RepeatingAlarm to show a toast
+                am.SetExactAndAllowWhileIdle(AlarmType.ElapsedRealtimeWakeup, SystemClock.ElapsedRealtime(), source);
+            }
+            else
+            {
+                Show(title, message);
+            }
+        }
+
+        public void SendNotificationTen(string title, string message, DateTime? notifyTime = null)
+        {
+            if (!channelInitialized)
+            {
+                CreateNotificationChannel();
+            }
+
+            if (notifyTime != null)
+            {
+                Intent intent = new Intent(AndroidApp.Context, typeof(RepeatingAlarmTenSec));
+                var source = PendingIntent.GetBroadcast(AndroidApp.Context, 0, intent, PendingIntentFlags.UpdateCurrent);
+
+                // Schedule the alarm!
+                var am = (AlarmManager)Android.App.Application.Context.GetSystemService(Context.AlarmService);
+
+                //After 15s, use the RepeatingAlarm to show a toast
+                am.SetExactAndAllowWhileIdle(AlarmType.ElapsedRealtimeWakeup, SystemClock.ElapsedRealtime(), source);
             }
             else
             {
