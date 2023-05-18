@@ -9,7 +9,7 @@ namespace meds.Pages.Notifications
         event EventHandler NotificationReceived;
         void Initialize();
         void SendNotificationFive(string title, string message, DateTime? notifyTime = null);
-        void SendNotificationTen(string title, string message, DateTime? notifyTime = null);
+        void SendNotification(string title, string message, DateTime? notifyTime = null);
         void ReceiveNotification(string title, string message);
     }
 }

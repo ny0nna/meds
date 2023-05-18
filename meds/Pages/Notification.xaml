@@ -6,29 +6,33 @@
 
     <StackLayout 
         x:Name="stackLayout"
-             BackgroundColor="GhostWhite">
-        <Label Text="10."
-           TextColor="Red"
-           HorizontalOptions="Center"
-           VerticalOptions="Start" />
-        <Button Text="Create Notification"
-            HorizontalOptions="Center"
-            VerticalOptions="Start"
-            Clicked="OnSendClick" />
-
-        <!--StackLayout Orientation="Horizontal" Padding="10,10,10,0">
-            <Label Text="Интервал повторений " LineBreakMode="CharacterWrap" FontSize="16"  VerticalOptions="CenterAndExpand" TextColor="Black"/>
-            <Entry x:Name="intervalTimer" HorizontalOptions="FillAndExpand" Keyboard="Numeric" WidthRequest="50" ClearButtonVisibility="WhileEditing"  TextColor="Black"/>
-            <Label Text="ч." FontSize="16" VerticalOptions="CenterAndExpand" TextColor="Black"/>
-        </StackLayout-->
+        BackgroundColor="GhostWhite"
+        Padding="10,20,10,10">
         
-        <Label Text="5." 
-            TextColor="Red" 
-           HorizontalOptions="Center"
-           VerticalOptions="Start" />
-         <Button Text="Create Notification"
-           HorizontalOptions="Center"
-            VerticalOptions="Start"
-            Clicked="OnScheduleClick" />
+        <StackLayout Margin="10,10,10,20">
+            <Label Text="Через 10 секунд после нажатия &#x0a; появится PUSH-уведомление."
+               TextColor="Red"              
+               HorizontalOptions="CenterAndExpand"
+               VerticalOptions="Start" />
+            <Button Text="PUSH-уведомление"
+                HorizontalOptions="Center"
+                VerticalOptions="Start"
+                Clicked="OnSendClick" />
+        </StackLayout>
+
+        <StackLayout Margin="10,10,10,20">
+            <Label Text="После нажатия будут появляться &#x0a; уведомления-сообщения каждые 5 секунд." 
+               TextColor="Red" 
+               HorizontalOptions="Center"
+               VerticalOptions="Start" />
+            <Button Text="Повторяющееся уведомление"
+                HorizontalOptions="Center"
+                VerticalOptions="Start"
+                Clicked="OnScheduleClick" />
+        <!--/StackLayout>
+        <StackLayout>
+            <Button Text="STOP"
+                    Clicked="StopClick"/-->
+        </StackLayout>
     </StackLayout>
 </ContentPage>

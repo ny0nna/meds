@@ -50,6 +50,11 @@ namespace meds.Pages
 
                 double l = 0;
                 double mg = 0;
+
+                if (endDosage < startDosage)
+                {
+                    DisplayAlert("Предупреждение", "Для достоверности расчетов введите данное корретно!\nКонечная дозировка должна быть БОЛЬШЕ начальной", "ОК");
+                }
                 do
                 {
                     l = endDosage - startDosage;
@@ -102,6 +107,10 @@ namespace meds.Pages
                
                 double l = 0;
                 double mg = 0;
+                if (endDosage > startDosage)
+                {
+                    DisplayAlert("Предупреждение", "Для достоверности расчетов введите данное корретно!\nКонечная дозировка должна быть МЕНЬШЕ начальной", "ОК");
+                }
                 do
                 {
                     l = startDosage - endDosage;

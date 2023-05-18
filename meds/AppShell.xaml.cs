@@ -19,7 +19,7 @@ namespace meds
 
         private async void MenuItem_Clicked(object sender, System.EventArgs e)
         {
-            await DisplayAlert("Помощь", "Информация об эксплуатации приложения находится на вкладке 'Главная'. Если у вас остались вопросы, напишите нам! Адрес электронной почты: shtvanna@gmail.com", "OK");
+            await DisplayAlert("Помощь", "Информация об эксплуатации приложения находится на вкладке «Главная». \nЕсли у вас остались вопросы, напишите нам! \nАдрес электронной почты: shtvanna@gmail.com", "OK");
         }
     }
 }

@@ -110,8 +110,6 @@
                     <Label FontSize="Medium" HorizontalOptions="FillAndExpand" TextColor="Black"
                            Text="Потом необходимо указать количество приемов в день."/>
 
-                    <!--Label FontSize="Medium" HorizontalOptions="FillAndExpand" Text="Теперь нужно указать  количество препарата в упаковке (это поможет расчитать, сколько упаковок понадобится на период изменения дозировки)."/-->
-
                     <Label FontSize="Medium" HorizontalOptions="FillAndExpand" TextColor="Black"
                            Text="После ввода всех необходимых данных нужно нажать на кнопку, после чего вы получите результат."/>
 
@@ -147,32 +145,34 @@
             <!-- 
                 четвертый boxview: 
             -->
-            <Frame BorderColor="Gray" BackgroundColor="#e1e4eb" CornerRadius="15" Margin="10,10,10,0">
+            <Frame BorderColor="Gray" BackgroundColor="#e1e4eb" CornerRadius="15" Margin="10,10,10,25">
                 <StackLayout>
-                    <Label Text="Тут будет инструкция по уведомлениям" FontSize="Title" HorizontalOptions="Center" TextColor="Black" />
+                    <Label FontSize="Title" FontAttributes="Bold" HorizontalOptions="CenterAndExpand" TextColor="Black"
+                           Text="Страница уведомлений" />
                     
                     <BoxView Color="DarkGray"  HeightRequest="2" HorizontalOptions="Fill" />
+                    <Label Text="Функционал" FontSize="Large" HorizontalOptions="Center"  Padding="0,0,0,10" TextColor="Black"/>
                     <BoxView Color="LightGray"  HeightRequest="2" HorizontalOptions="Fill" />
-
-                    <Label Text="Руководство по MEDS Tracker" FontSize="Large" HorizontalOptions="Center"  Padding="0,0,0,10" TextColor="Black"/>
-                    <Label Text="Руководство по MEDS Tracker" FontSize="Medium" HorizontalOptions="Fill" TextColor="Black" />
+                    <Label Text="На экране находятся 2 кнопки: &#x0a;    • Кнопка PUSH-уведомления; &#x0a;    • Кнопка повторяющихся уведомлений." FontSize="Medium" HorizontalOptions="FillAndExpand" TextColor="Black" />
+                    <Label Text="• Кнопка PUSH-уведомлений." Margin="0,10,0,10" FontAttributes="Bold"
+                           FontSize="Medium" HorizontalOptions="Fill" TextColor="Black" />
+                    <Label Text="Через 10 секунд после нажатия на эту кнопку вам придет PUSH-уведомление." FontSize="Medium" HorizontalOptions="Fill" TextColor="Black" />
+                    <Label FontSize="Small" HorizontalOptions="FillAndExpand" TextColor="Black"
+                           Text="Пример: "/>
+                    <Image Source="PushExample"/>
+                    
+                    <BoxView Color="LightGray"  HeightRequest="2" HorizontalOptions="Fill" />
+                    
+                    <Label Text="• Кнопка повторяющихся уведомлений." Margin="0,10,0,10" FontAttributes="Bold"
+                           FontSize="Medium" HorizontalOptions="Fill" TextColor="Black" />
+                    <Label Text="После нажатия на эту кнопку вам будут приходить сообщения уведомления каждые 5 секунд." FontSize="Medium" HorizontalOptions="Fill" TextColor="Black" />
+                    <Label FontSize="Small" HorizontalOptions="FillAndExpand" TextColor="Black"
+                           Text="Пример: "/>
+                    <Image Source="notificationExample"/>
                 </StackLayout>
             </Frame>
 
-            <!-- 
-                пятый boxview:
-            -->
-            <Frame BorderColor="Gray" BackgroundColor="#e1e4eb" CornerRadius="15" Margin="10,10,10,20">
-                <StackLayout>
-                    <Label Text="тут будет инструкция по истории расчетов, если добавлю эту функцию" FontSize="Title" HorizontalOptions="Center" TextColor="Black" />
-                    
-                    <BoxView Color="DarkGray"  HeightRequest="2" HorizontalOptions="Fill" />
-                    <BoxView Color="LightGray"  HeightRequest="2" HorizontalOptions="Fill" />
-
-                    <Label Text="Руководство по MEDS Tracker" FontSize="Large" HorizontalOptions="Center"  Padding="0,0,0,10" TextColor="Black"/>
-                    <Label Text="Руководство по MEDS Tracker" FontSize="Medium" HorizontalOptions="Fill" TextColor="Black" />
-                </StackLayout>
-            </Frame>
+          
             
         </StackLayout>        
     </ScrollView>

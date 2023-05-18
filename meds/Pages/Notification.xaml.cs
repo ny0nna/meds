@@ -1,5 +1,8 @@
-﻿using meds.Pages.Notifications;
+﻿using Android.Content;
+using meds.Pages.Notifications;
 using System;
+using System.ComponentModel;
+using System.Diagnostics;
 using Xamarin.Forms;
 using Xamarin.Forms.PlatformConfiguration;
 using Xamarin.Forms.Xaml;
@@ -26,27 +29,25 @@ namespace meds.Pages
 
         void OnSendClick(object sender, EventArgs e)
         {
-            string title = $"Local Notification #";
-            string message = $"You have now received notifications!";
-            notificationManager.SendNotificationTen(title, message, DateTime.Now.AddSeconds(10));
+            string title = $"Учебное уведомление";
+            string message = $"Пора пить лекарства!";
+            notificationManager.SendNotification(title, message, DateTime.Now.AddSeconds(10));
         }
-        public class Interval 
-        {
-            public int Hours { get; set; }
-        }
-
         
-
+        
         void OnScheduleClick(object sender, EventArgs e)
         {
             string title = $"Local Notification #";
             string message = $"You have now received notifications!";
             notificationManager.SendNotificationFive(title, message, DateTime.Now.AddSeconds(5));
-
-            
         }
 
-        void ShowNotification(string title, string message)
+        /*void StopClick(object sender, EventArgs e)
+        {
+            
+        } */   
+
+    void ShowNotification(string title, string message)
         {
             Device.BeginInvokeOnMainThread(() =>
             {

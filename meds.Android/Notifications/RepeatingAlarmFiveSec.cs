@@ -24,7 +24,7 @@ public class RepeatingAlarmFiveSec : BroadcastReceiver
             var am = (AlarmManager)Android.App.Application.Context.GetSystemService(Context.AlarmService);
             am.SetExactAndAllowWhileIdle(AlarmType.ElapsedRealtimeWakeup, SystemClock.ElapsedRealtime() +  5 * 1000, source);
 
-            Toast.MakeText(context, "пора пить таблетки 5sec", ToastLength.Long).Show();
+            Toast.MakeText(context, "Пора пить лекарства!", ToastLength.Long).Show();
         }
 }
 }
