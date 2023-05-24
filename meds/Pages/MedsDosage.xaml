@@ -56,7 +56,7 @@
             <BoxView HeightRequest="1" Color="DarkGray" Margin="0,10,0,10"/>
 
             <StackLayout Padding="10,10,10,0">
-                <Button Text="GO!" x:Name="BtnGoResult1" Clicked="BtnGoResult1_Clicked"/>
+                    <Button Text="Получить результат!" x:Name="BtnGoResult1" Clicked="BtnGoResult1_Clicked"/>
             </StackLayout>
 
             <Frame BackgroundColor="LightGray" 
@@ -124,7 +124,7 @@
             <BoxView HeightRequest="1" Color="DarkGray" Margin="0,10,0,10"/>
             
             <StackLayout Padding="10,10,10,0">
-                <Button Text="GO!" x:Name="BtnGoResult2" Clicked="BtnGoResult2_Clicked"/>
+                    <Button Text="Получить результат!" x:Name="BtnGoResult2" Clicked="BtnGoResult2_Clicked"/>
             </StackLayout>
 
             <Frame BackgroundColor="LightGray" 

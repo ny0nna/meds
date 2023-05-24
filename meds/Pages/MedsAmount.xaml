@@ -56,7 +56,7 @@
             
                     <!-- Кнопка для воспроизведения расчетов-->
                     <StackLayout Padding="10,10,10,0">
-                        <Button Text="GO!" x:Name="BtnGoResult1" Clicked="BtnGoResult1_Clicked"/>
+                    <Button Text="Получить результат!" x:Name="BtnGoResult1" Clicked="BtnGoResult1_Clicked"/>
                     </StackLayout>
 
                 <Frame BackgroundColor="LightGray" 
@@ -99,7 +99,7 @@
 
                 <!-- Кнопка для воспроизведения расчетов-->
                 <StackLayout Padding="10,10,10,0">
-                    <Button Text="GO!" x:Name="BtnGoRes" Clicked="BtnGoRes_Clicked"/>
+                    <Button Text="Получить результат!" x:Name="BtnGoRes" Clicked="BtnGoRes_Clicked"/>
                 </StackLayout>
                 
                 <Frame BackgroundColor="LightGray" 
